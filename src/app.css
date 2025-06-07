@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@plugin '@midudev/tailwind-animations';
+
+/*@utility bg-contrast;*/
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+@layer base {
+	@variant dark {
+		--color-bg: var(--color-neutral-900);
+		--color-text: #ffffff;
+	}
+	@variant light {
+		--color-bg: #ffffff;
+		--color-text: #000000;
+	}
+}
+
+@utility bg-contrast {
+	@apply light:bg-neutral-200 dark:bg-neutral-950;
+}
+
+@utility bg-chip-neutral {
+	@apply light:bg-neutral-300 dark:bg-neutral-600;
+}
+
+html,
+body {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+
+	font-family: "Comfortaa", sans-serif;
+}
+
+.disabled,
+*:is([disabled]),
+*:is([readonly]) {
+	filter: brightness(75%);
+}
+
+@theme {
+	--color-neutral-850: oklch(0.23 0 0);
+	--color-success: var(--color-green-500);
+	--color-hint: var(--color-gray-500);
+	--color-warning: var(--color-yellow-500);
+	--color-error: var(--color-red-500);
+
+	--mso-filled: 0;
+	--mso-grad: 0;
+	--mso-opsz: 24;
+}
+
+@utility mso-filled {
+	--mso-filled: 1;
+}
+
+@utility mso-sm {
+	--mso-opsz: 24;
+}
+
+@utility mso-md {
+	--mso-opsz: 48;
+}
+
+@utility mso-lg {
+	--mso-opsz: 64;
+}
+
+@utility mso {
+	font-family: "Material Symbols Outlined", serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-moz-font-feature-settings: "liga";
+	-moz-osx-font-smoothing: grayscale;
+
+	font-variation-settings:
+		"FILL" var(--mso-filled, 0),
+		"GRAD" var(--mso-grad, 0),
+		"opsz" var(--mso-opsz, 24);
+}
+
+.disable-focus-outline:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+@layer components {
+	.week-day-selector > .selector > button > div {
+		transition-delay: 0s;
+		display: inline-block;
+		overflow: clip;
+		text-wrap: nowrap;
+		text-overflow: fade;
+	}
+
+	.week-day-selector > .selector > button {
+		@apply grow-[0.5] rounded-2xl py-2.5 text-center transition-colors duration-500;
+
+		max-width: 30%;
+	}
+
+	.week-day-selector > .selector > button:is(.sel) {
+		@apply light:bg-blue-300 grow-1 bg-blue-900;
+	}
+
+	.message-box > .message {
+		@apply last:animate-delay-250 flex w-full justify-between rounded-xl border-2 border-yellow-700 px-2 py-1 opacity-0 transition-all duration-350 not-last:border-green-700 not-last:opacity-50 not-last:blur-md last:animate-[scale_ease-out_both_0.35s,fade-in_ease-out_forwards_0.35s];
+	}
+}

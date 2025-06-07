@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AngularSettings">
+    <option name="innerServiceType" value="DISABLED" />
+    <option name="useTypesFromServer" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74e90579-c662-4919-8947-6f5bf69d0ca2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ChatHistory_schema_v2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/PreviewDecorator.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messages/ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.inlang/cache/plugins/2sy648wh9sugi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.inlang/cache/plugins/ygx0uiahq6uw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.inlang/project_id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.inlang/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks.client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/requests/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/requests/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/requests/schema/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/requests/schema/schedule.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/requests/schema/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/result/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/server/requests/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/svelte-themes/SvelteTheme.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/svelte-themes/ThemeScript.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/svelte-themes/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/svelte-themes/helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/svelte-themes/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/account/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/account/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dev/logs/+server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/flow/auth/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/flow/complete/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/flow/complete/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/group/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/group/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/teacher/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/teacher/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/teacher/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/teacher/[name]/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/schedule/teacher/[name]/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/BottomNavBar.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Button.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Button.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/ErrorBox.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Hint.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/Hint.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/MessageBox.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/TextInput.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/TextInput.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/TextSelect.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/TextSelect.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/UsernameInput.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/pager/HorizontalPager.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/pager/HorizontalPager.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/Day.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/Day.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/Lesson.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/Lesson.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/Week.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/Week.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/WeekDaySelector.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/schedule/WeekDaySelector.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/screen/PostRegister.stories.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/screen/PostRegister.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/screen/post-register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="+page.server" />
+        <option value="+layout" />
+        <option value="+layout.server" />
+        <option value="+page" />
+        <option value="ErrorBox" />
+        <option value="UsernameInput" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xgnggwY9o20kCW8lNmmejYCK3s" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/n08i40k/WebstormProjects/polytechnic-mini-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.check.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.format.executor": "Run",
+    "npm.lint.executor": "Run",
+    "npm.storybook.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/home/n08i40k/WebstormProjects/polytechnic-mini-app/node_modules/prettier",
+    "settings.editor.selected.configurable": "com.github.firebender.androidstudiocopilot.settings.FirebenderSettingsConfigurable",
+    "ts.external.directory.path": "/home/n08i40k/WebstormProjects/polytechnic-mini-app/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON",
+      "TEXT",
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/requests/types/dto" />
+      <recent name="$PROJECT_DIR$/src/routes/account" />
+      <recent name="$PROJECT_DIR$/src/stories/pager" />
+      <recent name="$PROJECT_DIR$/src/routes/schedule/group" />
+      <recent name="$PROJECT_DIR$/src/routes/schedule" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/requests/schema" />
+      <recent name="$PROJECT_DIR$/src/routes/schedule/teacher/[name]" />
+      <recent name="$PROJECT_DIR$/src/routes/schedule/group" />
+      <recent name="$PROJECT_DIR$/src/routes/flow/auth" />
+      <recent name="$PROJECT_DIR$/src/lib/requests/types/dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.check">
+    <configuration name="check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.check" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.storybook" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e0793c8bcbd6-JavaScript-WS-252.19874.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SvelteServiceSettings">
+    <option name="lspServerPackageName" value="/usr/lib/node_modules/svelte-language-server" />
+    <option name="tsPluginPackageName" value="/usr/lib/node_modules/typescript-svelte-plugin" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74e90579-c662-4919-8947-6f5bf69d0ca2" name="Changes" comment="" />
+      <created>1748368698077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748368698077</updated>
+      <workItem from="1748368699439" duration="7585000" />
+      <workItem from="1748376354389" duration="1377000" />
+      <workItem from="1748378146908" duration="751000" />
+      <workItem from="1748378909141" duration="59000" />
+      <workItem from="1748378971360" duration="36000" />
+      <workItem from="1748379016250" duration="41000" />
+      <workItem from="1748379119990" duration="1026000" />
+      <workItem from="1748380156383" duration="28498000" />
+      <workItem from="1748450313579" duration="13066000" />
+      <workItem from="1748466862465" duration="54211000" />
+      <workItem from="1748688387818" duration="27585000" />
+      <workItem from="1748787502577" duration="31261000" />
+      <workItem from="1748885412631" duration="9669000" />
+      <workItem from="1748964474200" duration="256000" />
+      <workItem from="1748964738174" duration="13904000" />
+      <workItem from="1748978671655" duration="158000" />
+      <workItem from="1748978840209" duration="31000" />
+      <workItem from="1748978881515" duration="322000" />
+      <workItem from="1748979260259" duration="18000" />
+      <workItem from="1748979296784" duration="18000" />
+      <workItem from="1748979318922" duration="50568000" />
+      <workItem from="1749157670587" duration="143000" />
+      <workItem from="1749157879315" duration="337000" />
+      <workItem from="1749158380163" duration="25000" />
+      <workItem from="1749158418785" duration="133000" />
+      <workItem from="1749158558654" duration="17000" />
+      <workItem from="1749158584233" duration="100000" />
+      <workItem from="1749158691483" duration="51682000" />
+      <workItem from="1749309549396" duration="17041000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VueSettings">
+    <option name="innerServiceType" value="DISABLED" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/stories/screen/PostRegister.stories.svelte</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

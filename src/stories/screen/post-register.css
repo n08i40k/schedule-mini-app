@@ -1,0 +1,7 @@
+@reference "../../app.css";
+
+@layer components {
+	.post-register-screen > div > div > h2 {
+		@apply text-xl font-bold;
+	}
+}

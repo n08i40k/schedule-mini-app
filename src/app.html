@@ -1,0 +1,33 @@
+<!doctype html>
+<!--suppress HtmlUnknownTarget, HtmlRequiredTitleElement -->
+<html lang="%paraglide.lang%">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--Telegram WebApp-->
+		<script src="https://telegram.org/js/telegram-web-app.js?57"></script>
+
+		<!--Запросы-->
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,check_circle,date_range,error,group,info,meeting_room,person,school,warning"
+		/>
+
+		%sveltekit.head%
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

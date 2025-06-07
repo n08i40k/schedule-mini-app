@@ -1,0 +1,14 @@
+import type { LayoutServerLoad } from "./$types";
+import { apiServerClient } from "$lib/server/requests";
+import { APISchema } from "$lib/requests/schema/api";
+
+export const load: LayoutServerLoad = async ({ parent: _parent, cookies, params }) => {
+	const parent = await _parent();
+
+	const client = apiServerClient(cookies.get("access_token")!);
+	const teacher = await client
+		.get(APISchema.Schedule.TeacherSchema, [params.name])
+		.then((result) => result.ok);
+
+	return { ...parent, teacher };
+};
