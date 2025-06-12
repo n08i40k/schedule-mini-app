@@ -60,7 +60,7 @@ export class HighLevelApiClient {
 				return Result.ok(schema.Response?.parse(response.data) as Response);
 			})
 			.catch((error: AxiosError) => {
-				if (error.response === undefined && schema.ErrorResponse === undefined) throw error;
+				if (error.response === undefined || schema.ErrorResponse === undefined) throw error;
 				return Result.err(schema.ErrorResponse!.parse(error.response!.data) as ErrorResponse);
 			});
 	}
