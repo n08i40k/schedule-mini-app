@@ -1,5 +1,17 @@
+import * as Sentry from "@sentry/sveltekit";
 import { browser, dev } from "$app/environment";
 import { devApiClient } from "$lib/requests";
+
+Sentry.init({
+	dsn: "https://ec1d4fb226c65db91c617955320029cc@sentry.n08i40k.ru/12",
+	tracesSampleRate: 1,
+	replaysSessionSampleRate: 0.1,
+	replaysOnErrorSampleRate: 1,
+	integrations: [Sentry.replayIntegration()],
+	enableLogs: true
+});
+
+export const handleError = Sentry.handleErrorWithSentry();
 
 if (browser && dev) {
 	const original = {

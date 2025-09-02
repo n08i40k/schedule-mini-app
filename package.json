@@ -56,7 +56,8 @@
 		"zod": "^3.25.56"
 	},
 	"dependencies": {
-		"@inlang/paraglide-js": "^2.0.0"
+		"@inlang/paraglide-js": "^2.0.0",
+		"@sentry/sveltekit": "^10.8.0"
 	},
 	"overrides": {
 		"storybook": "$storybook"
