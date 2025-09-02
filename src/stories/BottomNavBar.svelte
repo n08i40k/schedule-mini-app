@@ -4,6 +4,7 @@
 	import { page } from "$app/state";
 
 	import * as m from "$lib/paraglide/messages";
+	import { NavigationObserver } from "$lib/utils/navigation.svelte";
 
 	interface Props {
 		children?: Snippet;
@@ -20,14 +21,17 @@
 	const isCurrentRoute = (route: string) => {
 		return page.url.pathname === route || page.url.pathname.startsWith(route + "/");
 	};
+
+	const navObserver = new NavigationObserver();
 </script>
 
 {#snippet routeButton(props: RouteButtonProps)}
 	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	<div
 		class="flex flex-col items-center gap-1"
+		class:disabled={navObserver.isNavigating}
 		role="button"
-		onclick={() => goto(props.targetRoute)}
+		onclick={() => !navObserver.isNavigating && goto(props.targetRoute)}
 		tabindex="0"
 	>
 		<div
@@ -47,9 +51,9 @@
 	</div>
 {/snippet}
 
-<div class="h-dvh w-dvw">
-	{@render props.children?.()}
-	<div class="bg-contrast absolute bottom-0 flex h-20 w-full items-center justify-evenly">
+<section class="flex flex-col h-screen w-dvw">
+	<div class="flex-1">{@render props.children?.()}</div>
+	<div class="bg-contrast sticky bottom-0 flex min-h-20 w-full items-center justify-evenly">
 		{@render routeButton({
 			icon: "account_circle",
 			text: m.nav_bar_profile,
@@ -66,4 +70,4 @@
 			targetRoute: "/schedule/teacher"
 		})}
 	</div>
-</div>
+</section>
