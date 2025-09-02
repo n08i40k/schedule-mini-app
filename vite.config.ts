@@ -24,15 +24,5 @@ export default defineConfig(({ mode }) => {
 				adapter: "auto"
 			})
 		],
-		server: {
-			allowedHosts: ["mini-app.polytechnic.n08i40k.ru", "mini-app.polytechnic.dev.n08i40k.ru"],
-			proxy: {
-				"/api": {
-					target: `https://${env.VITE_API_HOST}`,
-					changeOrigin: true,
-					rewrite: (path) => path
-				}
-			}
-		}
 	};
 });

@@ -1,3 +1,5 @@
+import { PUBLIC_API_HOST } from "$env/static/public";
+
 declare global {
 	// noinspection JSUnusedGlobalSymbols
 	interface Window {
@@ -13,7 +15,7 @@ import { HighLevelApiClient } from "$lib/requests/client";
 const _apiClient: HighLevelApiClient | undefined = browser
 	? new HighLevelApiClient(
 			window.axios.create({
-				baseURL: `/api/v1`,
+				baseURL: `https://${PUBLIC_API_HOST}/api/v1`,
 				withCredentials: true
 			})
 		)
