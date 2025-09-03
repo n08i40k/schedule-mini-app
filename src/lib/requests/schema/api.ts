@@ -57,7 +57,7 @@ export const FlowSchema = {
 			Uri: "/flow/telegram-auth",
 			UriArgsCount: 0,
 			Request: z.object({ initData: z.string() }),
-			Response: z.object({ completed: z.boolean() }),
+			Response: z.object({ completed: z.boolean(), accessToken: z.string() }),
 			ErrorResponse: ErrorResponse(FlowTelegramAuthErrorCode),
 			ErrorMessages: new Map([
 				[FlowTelegramAuthErrorCode.ExpiredInitData, m.error_flow_telegram_auth_expired_init_data],

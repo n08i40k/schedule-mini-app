@@ -41,8 +41,9 @@
 
 		apiClient
 			.post(APISchema.Flow.Telegram.AuthSchema, { initData: initData }, undefined)
-			.then((result) => {
+			.then(async (result) => {
 				if (result.isOk()) {
+					await window.fetch(`/api/auth/callback?token=${result.ok.accessToken}`, { method: "POST", credentials: "same-origin" });
 					next();
 					window.location.href = "/schedule/group";
 				} else error();

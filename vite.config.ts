@@ -1,12 +1,10 @@
 import { paraglideVitePlugin } from "@inlang/paraglide-js";
 import tailwindcss from "@tailwindcss/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
-import { defineConfig, loadEnv } from "vite";
+import { defineConfig } from "vite";
 import { sentrySvelteKit } from "@sentry/sveltekit";
 
-export default defineConfig(({ mode }) => {
-	const env = loadEnv(mode, process.cwd(), "VITE_");
-
+export default defineConfig(() => {
 	return {
 		plugins: [
 			tailwindcss(),
@@ -24,5 +22,8 @@ export default defineConfig(({ mode }) => {
 				adapter: "auto"
 			})
 		],
+		server: {
+			allowedHosts: ["mini-app.polytechnic.n08i40k.ru", "mini-app.polytechnic.dev.n08i40k.ru"],
+		}
 	};
 });
