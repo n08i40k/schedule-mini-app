@@ -12,6 +12,7 @@
 	"lesson_type_exam_default": "Экзамен",
 	"lesson_type_course_project": "Курсовой Проект",
 	"lesson_type_course_project_defense": "Защита Курсового Проекта",
+    "lesson_type_practice": "Практическое занятие",
 	"no_lessons": "В этот день пары отсутствуют :)",
 	"day_monday": "Понедельник",
 	"day_tuesday": "Вторник",

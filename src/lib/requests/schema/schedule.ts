@@ -12,7 +12,8 @@ export enum LessonTypeEnum {
 	ExamWithGrade,
 	ExamDefault,
 	CourseProject,
-	CourseProjectDefense
+	CourseProjectDefense,
+	Practice
 }
 
 export const LessonTypeSchema = z.enum(LessonTypeEnum);

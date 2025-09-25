@@ -13,7 +13,8 @@
 		[LessonTypeEnum.ExamWithGrade, m.lesson_type_exam_with_grade],
 		[LessonTypeEnum.ExamDefault, m.lesson_type_exam_default],
 		[LessonTypeEnum.CourseProject, m.lesson_type_course_project],
-		[LessonTypeEnum.CourseProjectDefense, m.lesson_type_course_project_defense]
+		[LessonTypeEnum.CourseProjectDefense, m.lesson_type_course_project_defense],
+		[LessonTypeEnum.CourseProjectDefense, m.lesson_type_practice]
 	]);
 
 	interface TextWithIconProps {

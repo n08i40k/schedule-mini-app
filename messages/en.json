@@ -12,6 +12,7 @@
 	"lesson_type_exam_default": "Default Exam",
 	"lesson_type_course_project": "Course Project",
 	"lesson_type_course_project_defense": "Course Project Defense",
+    "lesson_type_practice": "Practice",
 	"no_lessons": "No lessons at this day :)",
 	"day_monday": "Monday",
 	"day_tuesday": "Tuesday",
