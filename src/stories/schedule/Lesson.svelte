@@ -72,7 +72,7 @@
 					{@render text_with_icon({ icon: "school", text: data.teacher || "??" })}
 					{@render text_with_icon({ icon: "meeting_room", text: data.cabinet || "??" })}
 				{:else}
-					{index === 0 ? m.only_first_subgroup() : m.only_second_subgroup()}
+					{index === 0 ? m.only_second_subgroup() : m.only_first_subgroup()}
 				{/if}
 			</div>
 		{/snippet}
