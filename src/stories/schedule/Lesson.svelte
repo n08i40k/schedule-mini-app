@@ -14,7 +14,8 @@
 		[LessonTypeEnum.ExamDefault, m.lesson_type_exam_default],
 		[LessonTypeEnum.CourseProject, m.lesson_type_course_project],
 		[LessonTypeEnum.CourseProjectDefense, m.lesson_type_course_project_defense],
-		[LessonTypeEnum.CourseProjectDefense, m.lesson_type_practice]
+		[LessonTypeEnum.Practice, m.lesson_type_practice],
+		[LessonTypeEnum.DifferentiatedExam, m.lesson_type_differentiated_exam]
 	]);
 
 	interface TextWithIconProps {
@@ -84,14 +85,16 @@
 					class="leading-5 font-bold [.priority-high]:text-red-500 [.priority-low]:text-green-500 [.priority-low]:opacity-30 [.priority-medium]:text-orange-500 [.priority-medium]:opacity-60"
 					class:priority-low={[
 						LessonTypeEnum.Consultation,
-						LessonTypeEnum.IndependentWork
+						LessonTypeEnum.IndependentWork,
+						LessonTypeEnum.Practice,
 					].includes(lesson.type)}
 					class:priority-medium={[LessonTypeEnum.CourseProject].includes(lesson.type)}
 					class:priority-high={[
 						LessonTypeEnum.Exam,
 						LessonTypeEnum.ExamWithGrade,
 						LessonTypeEnum.ExamDefault,
-						LessonTypeEnum.CourseProjectDefense
+						LessonTypeEnum.CourseProjectDefense,
+						LessonTypeEnum.DifferentiatedExam,
 					]}
 				>
 					{typeStr()}

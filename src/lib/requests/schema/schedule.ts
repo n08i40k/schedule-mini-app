@@ -13,7 +13,8 @@ export enum LessonTypeEnum {
 	ExamDefault,
 	CourseProject,
 	CourseProjectDefense,
-	Practice
+	Practice,
+	DifferentiatedExam
 }
 
 export const LessonTypeSchema = z.enum(LessonTypeEnum);
