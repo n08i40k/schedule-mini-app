@@ -3,7 +3,7 @@
 	import WeekDaySelector from "./WeekDaySelector.svelte";
 	import Day from "./Day.svelte";
 	import HorizontalPager from "../pager/HorizontalPager.svelte";
-	import type { ScheduleEntryType } from "$lib/requests/schema/schedule";
+	import type { DayType, ScheduleEntryType } from "$lib/requests/schema/schedule";
 
 	// types
 	type WeekProps = {

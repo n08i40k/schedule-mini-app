@@ -13,5 +13,5 @@ export const UserSchema = z.object({
 	role: z.enum(UserRole),
 	vkId: z.number().nullable(),
 	telegramId: z.number().nullable(),
-	accessToken: z.string().optional()
+	accessToken: z.string().nullish()
 });

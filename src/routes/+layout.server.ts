@@ -15,9 +15,12 @@ export const load: LayoutServerLoad = async ({ route, cookies }) => {
 		}
 	}
 
-	if (!accessToken) check_and_reroute("/flow/auth");
+	if (!accessToken) {
+		check_and_reroute("/flow/auth");
+		return { user: null };
+	}
 
-	const client = apiServerClient(accessToken!);
+	const client = apiServerClient(accessToken);
 	const user = await client
 		.get(APISchema.Users.Me, undefined)
 		.then((result) => result.ok)

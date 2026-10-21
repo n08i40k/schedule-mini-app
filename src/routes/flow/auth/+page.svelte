@@ -28,6 +28,7 @@
 	}
 
 	let currentStepState: StepState = $state(StepState.PROCESSING);
+	let errorMessage = $state("");
 
 	onMount(() => {
 		next();
@@ -35,7 +36,7 @@
 		const initData = window.Telegram?.WebApp?.initData;
 
 		if (!initData) {
-			error();
+			error(m.error_flow_telegram_auth_invalid_init_data());
 			return;
 		}
 
@@ -43,15 +44,28 @@
 			.post(APISchema.Flow.Telegram.AuthSchema, { initData: initData }, undefined)
 			.then(async (result) => {
 				if (result.isOk()) {
-					await window.fetch(`/api/auth/callback?token=${result.ok.accessToken}`, { method: "POST", credentials: "same-origin" });
+					const callback = await window.fetch(
+						`/api/auth/callback?token=${encodeURIComponent(result.ok.accessToken)}`,
+						{ method: "POST", credentials: "same-origin" }
+					);
+					if (!callback.ok) {
+						error(m.error_unknown());
+						return;
+					}
 					next();
-					window.location.href = "/schedule/group";
-				} else error();
+					window.location.href = result.ok.completed ? "/schedule/group" : "/flow/complete";
+				} else {
+					error(
+						APISchema.Flow.Telegram.AuthSchema.ErrorMessages.get(result.err.code)?.() ??
+							m.error_unknown()
+					);
+				}
 			})
-			.catch(() => error());
+			.catch(() => error(m.error_bad_connection()));
 	});
 
-	function error() {
+	function error(message: string) {
+		errorMessage = message;
 		currentStepState = StepState.ERROR;
 	}
 
@@ -140,9 +154,7 @@
 				<p class="font-mono text-2xl font-bold text-red-600 uppercase" id="error-title">ОШИБКА</p>
 
 				<p class="w-[85vw] text-center landscape:w-[75vw]">
-					На сайт можно зайти только через бота в
-					<a class="text-blue-300 underline" href="https://t.me/n08i40k">Telegram</a>
-					и только на мобильных устройствах.
+					{errorMessage}
 				</p>
 			</div>
 		{/if}
